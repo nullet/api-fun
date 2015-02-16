@@ -166,4 +166,52 @@ If we wanted to see everyone's trades all at once, we would just replace `:membe
 
 ## Memberships#show
 
-> To view a specific user's 
+```shell
+curl -u username:password http://home.inklingmarkets.com/memberships/314825.xml
+```
+
+> This gives all the info on that user.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<membership>
+  <id type="integer">314825</id>
+  <portfolio type="integer">1761252</portfolio>
+  <worth type="integer">6243740</worth>
+  <available-balance type="integer">1812488</available-balance>
+  <user>
+    <active type="boolean">true</active>
+    <first-name>firstname</first-name>
+    <id type="integer">314898</id>
+    <last-name>lastname</last-name>
+    <login>truckasaurus</login>
+    <push-closing-market-alerts type="boolean">true</push-closing-market-alerts>
+    <push-new-comment-alerts type="boolean">true</push-new-comment-alerts>
+    <push-new-market-alerts type="boolean">true</push-new-market-alerts>
+    <push-price-alerts type="boolean">true</push-price-alerts>
+    <email>email</email>
+  </user>
+  <balance type="integer">4482488</balance>
+  <answers type="array">
+    <answer>
+      <private type="boolean">false</private>
+      <question-id type="integer">153</question-id>
+      <text></text>
+    </answer>
+    <answer>
+      <private type="boolean">false</private>
+      <question-id type="integer">152</question-id>
+      <text></text>
+    </answer>
+    <answer>
+      <private type="boolean">false</private>
+      <question-id type="integer">151</question-id>
+      <text></text>
+    </answer>
+  </answers>
+</membership>
+```
+
+Let's say we want to find out the worth of a particular user. We can do that via the memberships endpoint.
+
+This call will allow an admin to look at any user's information.  The most salient data would typically be their `worth` and `available-balance` fields.
