@@ -192,23 +192,6 @@ curl -u username:password http://home.inklingmarkets.com/memberships/314825.xml
     <email>email</email>
   </user>
   <balance type="integer">4482488</balance>
-  <answers type="array">
-    <answer>
-      <private type="boolean">false</private>
-      <question-id type="integer">153</question-id>
-      <text></text>
-    </answer>
-    <answer>
-      <private type="boolean">false</private>
-      <question-id type="integer">152</question-id>
-      <text></text>
-    </answer>
-    <answer>
-      <private type="boolean">false</private>
-      <question-id type="integer">151</question-id>
-      <text></text>
-    </answer>
-  </answers>
 </membership>
 ```
 
