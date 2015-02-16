@@ -236,6 +236,254 @@
 
 <p>This call will allow an admin to look at any user&rsquo;s information.  The most salient data would typically be their <code class="prettyprint">worth</code> and <code class="prettyprint">available-balance</code> fields.</p>
 
+          <h1 id="fed-funds-rate">Fed Funds Rate</h1>
+
+<h2 id="markets#show">Markets#show</h2>
+<pre><code class="highlight shell">curl -u username:password http://home.inklingmarkets.com/markets/62672.xml
+</code></pre>
+<pre><code class="highlight xml"><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;dateranges&gt;</span>
+  <span class="nt">&lt;created-at</span> <span class="na">type=</span><span class="s">"datetime"</span><span class="nt">&gt;</span>2014-10-14T04:58:44-07:00<span class="nt">&lt;/created-at&gt;</span>
+  <span class="nt">&lt;ends-at</span> <span class="na">type=</span><span class="s">"datetime"</span><span class="nt">&gt;</span>2015-03-30T23:59:00-07:00<span class="nt">&lt;/ends-at&gt;</span>
+  <span class="nt">&lt;exclusive</span> <span class="na">type=</span><span class="s">"boolean"</span><span class="nt">&gt;</span>false<span class="nt">&lt;/exclusive&gt;</span>
+  <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>62672<span class="nt">&lt;/id&gt;</span>
+  <span class="nt">&lt;notes-count</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/notes-count&gt;</span>
+  <span class="nt">&lt;opinion</span> <span class="na">type=</span><span class="s">"boolean"</span><span class="nt">&gt;</span>false<span class="nt">&lt;/opinion&gt;</span>
+  <span class="nt">&lt;resolved</span> <span class="na">type=</span><span class="s">"boolean"</span><span class="nt">&gt;</span>false<span class="nt">&lt;/resolved&gt;</span>
+  <span class="nt">&lt;resolved-at</span> <span class="na">type=</span><span class="s">"datetime"</span> <span class="na">nil=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/resolved-at&gt;</span>
+  <span class="nt">&lt;scale</span> <span class="na">type=</span><span class="s">"float"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/scale&gt;</span>
+  <span class="nt">&lt;slush</span> <span class="na">nil=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/slush&gt;</span>
+  <span class="nt">&lt;starts-at</span> <span class="na">type=</span><span class="s">"datetime"</span> <span class="na">nil=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/starts-at&gt;</span>
+  <span class="nt">&lt;trades-count</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>82<span class="nt">&lt;/trades-count&gt;</span>
+  <span class="nt">&lt;updated-at</span> <span class="na">type=</span><span class="s">"datetime"</span><span class="nt">&gt;</span>2015-02-16T10:52:06-08:00<span class="nt">&lt;/updated-at&gt;</span>
+  <span class="nt">&lt;name&gt;</span>In which quarter will the U.S. Federal Reserve first increase its target for the Fed Funds Rate?<span class="nt">&lt;/name&gt;</span>
+  <span class="nt">&lt;description&gt;</span>...<span class="nt">&lt;/description&gt;</span>
+  <span class="nt">&lt;category-id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>6<span class="nt">&lt;/category-id&gt;</span>
+  <span class="nt">&lt;widget-access-key&gt;</span>...<span class="nt">&lt;/widget-access-key&gt;</span>
+  <span class="nt">&lt;tags</span> <span class="na">type=</span><span class="s">"array"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;tag&gt;</span>
+      <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>1088<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;name&gt;</span>fed<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;/tag&gt;</span>
+    <span class="nt">&lt;tag&gt;</span>
+      <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>154<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;name&gt;</span>Funds<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;/tag&gt;</span>
+    <span class="nt">&lt;tag&gt;</span>
+      <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>1090<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;name&gt;</span>interest<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;/tag&gt;</span>
+    <span class="nt">&lt;tag&gt;</span>
+      <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>1122<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;name&gt;</span>Rates<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;/tag&gt;</span>
+  <span class="nt">&lt;/tags&gt;</span>
+  <span class="nt">&lt;closed</span> <span class="na">type=</span><span class="s">"boolean"</span><span class="nt">&gt;</span>false<span class="nt">&lt;/closed&gt;</span>
+  <span class="nt">&lt;membership&gt;&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>313004<span class="nt">&lt;/id&gt;&lt;/membership&gt;</span>
+  <span class="nt">&lt;stocks</span> <span class="na">type=</span><span class="s">"array"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;stock&gt;</span>
+      <span class="nt">&lt;created-at</span> <span class="na">type=</span><span class="s">"datetime"</span><span class="nt">&gt;</span>2014-10-14T05:00:07-07:00<span class="nt">&lt;/created-at&gt;</span>
+      <span class="nt">&lt;eod-price</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>1938<span class="nt">&lt;/eod-price&gt;</span>
+      <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>233922<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;price</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>1938<span class="nt">&lt;/price&gt;</span>
+      <span class="nt">&lt;price-before-resolution</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>1938<span class="nt">&lt;/price-before-resolution&gt;</span>
+      <span class="nt">&lt;refunded</span> <span class="na">type=</span><span class="s">"boolean"</span> <span class="na">nil=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/refunded&gt;</span>
+      <span class="nt">&lt;resolved-at</span> <span class="na">type=</span><span class="s">"datetime"</span> <span class="na">nil=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/resolved-at&gt;</span>
+      <span class="nt">&lt;slush</span> <span class="na">nil=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/slush&gt;</span>
+      <span class="nt">&lt;starting-price</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>1050<span class="nt">&lt;/starting-price&gt;</span>
+      <span class="nt">&lt;name&gt;</span>3rd 2015<span class="nt">&lt;/name&gt;</span>
+      <span class="nt">&lt;description&gt;&lt;/description&gt;</span>
+      <span class="nt">&lt;symbol&gt;</span>32<span class="nt">&lt;/symbol&gt;</span>
+      <span class="nt">&lt;closed</span> <span class="na">type=</span><span class="s">"boolean"</span><span class="nt">&gt;</span>false<span class="nt">&lt;/closed&gt;</span>
+    <span class="nt">&lt;/stock&gt;</span>
+    <span class="nt">&lt;stock&gt;</span>
+      <span class="nt">&lt;created-at</span> <span class="na">type=</span><span class="s">"datetime"</span><span class="nt">&gt;</span>2014-10-14T05:00:32-07:00<span class="nt">&lt;/created-at&gt;</span>
+      <span class="nt">&lt;eod-price</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>1869<span class="nt">&lt;/eod-price&gt;</span>
+      <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>233923<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;price</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>1869<span class="nt">&lt;/price&gt;</span>
+      <span class="nt">&lt;price-before-resolution</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>1869<span class="nt">&lt;/price-before-resolution&gt;</span>
+      <span class="nt">&lt;refunded</span> <span class="na">type=</span><span class="s">"boolean"</span> <span class="na">nil=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/refunded&gt;</span>
+      <span class="nt">&lt;resolved-at</span> <span class="na">type=</span><span class="s">"datetime"</span> <span class="na">nil=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/resolved-at&gt;</span>
+      <span class="nt">&lt;slush</span> <span class="na">nil=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/slush&gt;</span>
+      <span class="nt">&lt;starting-price</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>1050<span class="nt">&lt;/starting-price&gt;</span>
+      <span class="nt">&lt;name&gt;</span>4th 2015<span class="nt">&lt;/name&gt;</span>
+      <span class="nt">&lt;description&gt;&lt;/description&gt;</span>
+      <span class="nt">&lt;symbol&gt;</span>422<span class="nt">&lt;/symbol&gt;</span>
+      <span class="nt">&lt;closed</span> <span class="na">type=</span><span class="s">"boolean"</span><span class="nt">&gt;</span>false<span class="nt">&lt;/closed&gt;</span>
+    <span class="nt">&lt;/stock&gt;</span>
+    <span class="nt">&lt;stock&gt;</span>
+    ...
+    <span class="nt">&lt;/stock&gt;</span>
+  <span class="nt">&lt;/stocks&gt;</span>
+<span class="nt">&lt;/dateranges&gt;</span>
+</code></pre>
+
+<p>The concept for this market is the same - we&rsquo;re just looking at a different type, in this case <strong>dateranges</strong>.</p>
+
+<p>The market in question can be seen <a href='http://home.inklingmarkets.com/markets/62672'>here.</a></p>
+
+<h2 id="trades#list">Trades#list</h2>
+<pre><code class="highlight shell">curl -u username:password http://home.inklingmarkets.com/markets/58931/trades.xml
+</code></pre>
+<pre><code class="highlight xml"><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;trades</span> <span class="na">type=</span><span class="s">"array"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;sell&gt;</span>
+    <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>4298550<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;membership&gt;</span>
+      <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>270578<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;/membership&gt;</span>
+    <span class="nt">&lt;stock&gt;</span>
+      <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>233922<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;/stock&gt;</span>
+    <span class="nt">&lt;created-at</span> <span class="na">type=</span><span class="s">"datetime"</span><span class="nt">&gt;</span>2015-02-12T07:26:43-08:00<span class="nt">&lt;/created-at&gt;</span>
+    <span class="nt">&lt;quantity</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/quantity&gt;</span>
+    <span class="nt">&lt;paid</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>-19693<span class="nt">&lt;/paid&gt;</span>
+    <span class="nt">&lt;reason&gt;&lt;/reason&gt;</span>
+    <span class="nt">&lt;starting_price</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>2001<span class="nt">&lt;/starting_price&gt;</span>
+    <span class="nt">&lt;final_price</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>1938<span class="nt">&lt;/final_price&gt;</span>
+    <span class="nt">&lt;login&gt;</span>user1<span class="nt">&lt;/login&gt;</span>
+  <span class="nt">&lt;/sell&gt;</span>
+  <span class="nt">&lt;sell&gt;</span>
+    <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>4298549<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;membership&gt;</span>
+      <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>270578<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;/membership&gt;</span>
+    <span class="nt">&lt;stock&gt;</span>
+      <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>233923<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;/stock&gt;</span>
+    <span class="nt">&lt;created-at</span> <span class="na">type=</span><span class="s">"datetime"</span><span class="nt">&gt;</span>2015-02-12T07:26:22-08:00<span class="nt">&lt;/created-at&gt;</span>
+    <span class="nt">&lt;quantity</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/quantity&gt;</span>
+    <span class="nt">&lt;paid</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>-18851<span class="nt">&lt;/paid&gt;</span>
+    <span class="nt">&lt;reason&gt;&lt;/reason&gt;</span>
+    <span class="nt">&lt;starting_price</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>1915<span class="nt">&lt;/starting_price&gt;</span>
+    <span class="nt">&lt;final_price</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>1855<span class="nt">&lt;/final_price&gt;</span>
+    <span class="nt">&lt;login&gt;</span>user1<span class="nt">&lt;/login&gt;</span>
+  <span class="nt">&lt;/sell&gt;</span>
+  <span class="nt">&lt;buy&gt;</span>
+  ...
+  <span class="nt">&lt;/buy&gt;</span>
+<span class="nt">&lt;/trades&gt;</span>
+</code></pre>
+
+<p>As with the market above, we see a list of the trades made on the market, along with information on who made those trades.</p>
+
+          <h1 id="binary">Binary</h1>
+
+<h2 id="markets#show">Markets#show</h2>
+<pre><code class="highlight shell">curl -u username:password http://home.inklingmarkets.com/markets/63356.xml
+</code></pre>
+<pre><code class="highlight xml"><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;binary&gt;</span>
+  <span class="nt">&lt;created-at</span> <span class="na">type=</span><span class="s">"datetime"</span><span class="nt">&gt;</span>2015-01-06T11:51:59-08:00<span class="nt">&lt;/created-at&gt;</span>
+  <span class="nt">&lt;ends-at</span> <span class="na">type=</span><span class="s">"datetime"</span><span class="nt">&gt;</span>2015-03-30T23:59:00-07:00<span class="nt">&lt;/ends-at&gt;</span>
+  <span class="nt">&lt;exclusive</span> <span class="na">type=</span><span class="s">"boolean"</span><span class="nt">&gt;</span>false<span class="nt">&lt;/exclusive&gt;</span>
+  <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>63356<span class="nt">&lt;/id&gt;</span>
+  <span class="nt">&lt;notes-count</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/notes-count&gt;</span>
+  <span class="nt">&lt;opinion</span> <span class="na">type=</span><span class="s">"boolean"</span><span class="nt">&gt;</span>false<span class="nt">&lt;/opinion&gt;</span>
+  <span class="nt">&lt;resolved</span> <span class="na">type=</span><span class="s">"boolean"</span><span class="nt">&gt;</span>false<span class="nt">&lt;/resolved&gt;</span>
+  <span class="nt">&lt;resolved-at</span> <span class="na">type=</span><span class="s">"datetime"</span> <span class="na">nil=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/resolved-at&gt;</span>
+  <span class="nt">&lt;scale</span> <span class="na">type=</span><span class="s">"float"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/scale&gt;</span>
+  <span class="nt">&lt;slush</span> <span class="na">nil=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/slush&gt;</span>
+  <span class="nt">&lt;starts-at</span> <span class="na">type=</span><span class="s">"datetime"</span> <span class="na">nil=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/starts-at&gt;</span>
+  <span class="nt">&lt;trades-count</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>44<span class="nt">&lt;/trades-count&gt;</span>
+  <span class="nt">&lt;updated-at</span> <span class="na">type=</span><span class="s">"datetime"</span><span class="nt">&gt;</span>2015-02-16T09:02:46-08:00<span class="nt">&lt;/updated-at&gt;</span>
+  <span class="nt">&lt;name&gt;</span>Based upon closing prices during the quarter, will the S<span class="ni">&amp;amp;</span>P 500 experience a 10% decline any time during the second quarter of 2015?<span class="nt">&lt;/name&gt;</span>
+  <span class="nt">&lt;description&gt;</span>...<span class="nt">&lt;/description&gt;</span>
+  <span class="nt">&lt;category-id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>6<span class="nt">&lt;/category-id&gt;</span>
+  <span class="nt">&lt;widget-access-key&gt;</span>...<span class="nt">&lt;/widget-access-key&gt;</span>
+  <span class="nt">&lt;tags</span> <span class="na">type=</span><span class="s">"array"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;tag&gt;</span>
+      <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>1083<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;name&gt;</span>500<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;/tag&gt;</span>
+    <span class="nt">&lt;tag&gt;</span>
+      <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>335<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;name&gt;</span>market<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;/tag&gt;</span>
+    <span class="nt">&lt;tag&gt;</span>
+      <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>1082<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;name&gt;</span>S<span class="ni">&amp;amp;</span>P<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;/tag&gt;</span>
+    <span class="nt">&lt;tag&gt;</span>
+      <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>33<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;name&gt;</span>stock<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;/tag&gt;</span>
+    <span class="nt">&lt;tag&gt;</span>
+      <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>536<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;name&gt;</span>stocks<span class="nt">&lt;/name&gt;</span>
+    <span class="nt">&lt;/tag&gt;</span>
+  <span class="nt">&lt;/tags&gt;</span>
+  <span class="nt">&lt;closed</span> <span class="na">type=</span><span class="s">"boolean"</span><span class="nt">&gt;</span>false<span class="nt">&lt;/closed&gt;</span>
+  <span class="nt">&lt;membership&gt;&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>313004<span class="nt">&lt;/id&gt;&lt;/membership&gt;</span>
+  <span class="nt">&lt;stocks</span> <span class="na">type=</span><span class="s">"array"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;stock&gt;</span>
+      <span class="nt">&lt;created-at</span> <span class="na">type=</span><span class="s">"datetime"</span><span class="nt">&gt;</span>2015-01-06T11:51:59-08:00<span class="nt">&lt;/created-at&gt;</span>
+      <span class="nt">&lt;eod-price</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>3489<span class="nt">&lt;/eod-price&gt;</span>
+      <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>237335<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;price</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>3489<span class="nt">&lt;/price&gt;</span>
+      <span class="nt">&lt;price-before-resolution</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>3489<span class="nt">&lt;/price-before-resolution&gt;</span>
+      <span class="nt">&lt;refunded</span> <span class="na">type=</span><span class="s">"boolean"</span> <span class="na">nil=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/refunded&gt;</span>
+      <span class="nt">&lt;resolved-at</span> <span class="na">type=</span><span class="s">"datetime"</span> <span class="na">nil=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/resolved-at&gt;</span>
+      <span class="nt">&lt;slush</span> <span class="na">nil=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/slush&gt;</span>
+      <span class="nt">&lt;starting-price</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>5000<span class="nt">&lt;/starting-price&gt;</span>
+      <span class="nt">&lt;name&gt;</span>Yes<span class="nt">&lt;/name&gt;</span>
+      <span class="nt">&lt;description</span> <span class="na">nil=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/description&gt;</span>
+      <span class="nt">&lt;symbol&gt;</span>YES<span class="nt">&lt;/symbol&gt;</span>
+      <span class="nt">&lt;closed</span> <span class="na">type=</span><span class="s">"boolean"</span><span class="nt">&gt;</span>false<span class="nt">&lt;/closed&gt;</span>
+    <span class="nt">&lt;/stock&gt;</span>
+  <span class="nt">&lt;/stocks&gt;</span>
+<span class="nt">&lt;/binary&gt;</span>
+</code></pre>
+
+<p>This market is different from the first two. It&rsquo;s a <strong>binary</strong> market, so it only has one stock being traded. Conceptually, it is otherwise identical.</p>
+
+<p>This market can be viewed <a href='http://home.inklingmarkets.com/markets/63356'>here.</a></p>
+
+<h2 id="trades#list">Trades#list</h2>
+<pre><code class="highlight shell">curl -u username:password http://home.inklingmarkets.com/markets/63356/trades.xml
+</code></pre>
+<pre><code class="highlight xml"><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;trades</span> <span class="na">type=</span><span class="s">"array"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;sell&gt;</span>
+    <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>4298923<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;membership&gt;</span>
+      <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>309326<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;/membership&gt;</span>
+    <span class="nt">&lt;stock&gt;</span>
+      <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>237335<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;/stock&gt;</span>
+    <span class="nt">&lt;created-at</span> <span class="na">type=</span><span class="s">"datetime"</span><span class="nt">&gt;</span>2015-02-13T11:56:25-08:00<span class="nt">&lt;/created-at&gt;</span>
+    <span class="nt">&lt;quantity</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>50<span class="nt">&lt;/quantity&gt;</span>
+    <span class="nt">&lt;paid</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>-186008<span class="nt">&lt;/paid&gt;</span>
+    <span class="nt">&lt;reason&gt;&lt;/reason&gt;</span>
+    <span class="nt">&lt;starting_price</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>3956<span class="nt">&lt;/starting_price&gt;</span>
+    <span class="nt">&lt;final_price</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>3489<span class="nt">&lt;/final_price&gt;</span>
+    <span class="nt">&lt;login&gt;</span>user1<span class="nt">&lt;/login&gt;</span>
+  <span class="nt">&lt;/sell&gt;</span>
+  <span class="nt">&lt;buy&gt;</span>
+    <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>4298903<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;membership&gt;</span>
+      <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>270578<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;/membership&gt;</span>
+    <span class="nt">&lt;stock&gt;</span>
+      <span class="nt">&lt;id</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>237335<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;/stock&gt;</span>
+    <span class="nt">&lt;created-at</span> <span class="na">type=</span><span class="s">"datetime"</span><span class="nt">&gt;</span>2015-02-13T10:27:10-08:00<span class="nt">&lt;/created-at&gt;</span>
+    <span class="nt">&lt;quantity</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/quantity&gt;</span>
+    <span class="nt">&lt;paid</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>39080<span class="nt">&lt;/paid&gt;</span>
+    <span class="nt">&lt;reason&gt;&lt;/reason&gt;</span>
+    <span class="nt">&lt;starting_price</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>3861<span class="nt">&lt;/starting_price&gt;</span>
+    <span class="nt">&lt;final_price</span> <span class="na">type=</span><span class="s">"integer"</span><span class="nt">&gt;</span>3956<span class="nt">&lt;/final_price&gt;</span>
+    <span class="nt">&lt;login&gt;</span>user2<span class="nt">&lt;/login&gt;</span>
+  <span class="nt">&lt;/buy&gt;</span>
+  <span class="nt">&lt;sell&gt;</span>
+  ...
+  <span class="nt">&lt;/sell&gt;</span>
+<span class="nt">&lt;/trades&gt;</span>
+</code></pre>
+
+<p>Again, we see a list of trades made on the market here. The key difference is that the <code class="prettyprint">stock id</code> is going to be the same on every single trade.</p>
+
       </div>
       <div class="dark-box">
       </div>
