@@ -6,6 +6,8 @@ toc_footers:
 
 includes:
   - candidates
+  - fed
+  - binary
 
 search: true
 ---
